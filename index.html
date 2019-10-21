@@ -17,6 +17,30 @@
 
 
 
+
+<div class="header-top-bar">
+    <div class="header-top-bar container">
+
+        <a id="header-top-bar-pucmm-btn" href="https://pucmm.edu.do/">
+            <i class='uil uil-link'></i>
+           <span>Ir al portal</span> 
+        </a>
+
+        <div id="header-top-bar-social-icons">
+            <a href="#"><i class='uil uil-facebook-f'></i></a>
+            <a href="#"><i class='uil uil-twitter'></i></a>
+            <a href="#"><i class='uil uil-youtube'></i></a>
+            <a href="#"><i class='uil uil-instagram-alt'></i></a>
+            <a href="#"><i class='uil uil-linkedin'></i></a>
+        </div><!--header top bar social icons-->
+
+    </div><!---container-->
+</div><!---header top bar--->
+
+
+
+
+
 <header>
     <div class="container" style="padding: 0 !important;">
         <div class="custom-navbar h-100">
@@ -24,8 +48,6 @@
             <a class="custom-navbar-logo">
                <img src="/img/logo.png" alt=""> 
             </a>
-
-
 
 
 
@@ -87,7 +109,7 @@
 
     <div id="main-row-top" class="row h-100">
         <div id="main-row-left-top" class="col-md-6">
-            <div id="main-row-left-top-inner">
+            <div id="main-row-left-top-inner" class="h-100">
 
                 <h3>PERFIL DEL EGRESADO</h3>
                 <h2>INGENIERIA DE SISTEMAS Y COMPUTACIÓN</h2>
@@ -194,19 +216,22 @@
 
 
         <div id="map-posts" class="col-md-3">
+            <div>
 				<?php query_posts('posts_per_page=3');
 					if (have_posts()) : while (have_posts()) : the_post(); ?>
                         <a href="<?php the_permalink(); ?>" class="article-wrapper d-flex <?php post_class(); ?>" id="post-<?php the_ID(); ?>">
-                            <div class="article-date text-center- w-25">
-                                <?php echo get_the_date(); ?>
+                            <div class="article-date text-center w-25">
+                                <span><?php echo get_the_date(d); ?></span>
+                                <small><?php echo get_the_date(M); ?></small>
                             </div>
                             <div class="article-title w-75">
-                               <h4><?php the_title(); ?></h4>
+                               <h4><?php echo wp_trim_excerpt( get_the_title() ); ?></h4>
                             </div>						
                         </a><!-- //. recent post objet-->
 				<?php endwhile; endif; ?>
-				<?php wp_reset_query(); ?>
-        </div>
+				<?php wp_reset_query(); ?>                
+            </div>
+        </div><!---map posts---->
 
     </div><!----row----main middlee-->
 
@@ -217,7 +242,7 @@
 
 
 
-    <div class="row h-100">
+    <div class="row h-100 d-none d-md-flex">
         <div id="middle-carousel" class="carousel slide carousel-fade col-md-12" data-ride="carousel">
 
                 <ol id="middle-carousel-indicators" class="carousel-indicators">

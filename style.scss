@@ -1,8 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Pinyon+Script|Roboto+Condensed&display=swap');
 
 body,html,*::before , *, *::after{
-    font-family: 'Roboto Condensed', sans-serif;
-    transition: all 0.5s ease-in-out;
     will-change: contents !important;
     scroll-behavior: smooth !important;
     -webkit-overflow-scrolling: smooth !important;
@@ -17,6 +15,48 @@ h1,h2,h3,h4,h5,h6,p,span,label,small,div,input,ul,li,ol,form,strong,a,i,::placeh
     -webkit-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
 }
+
+
+
+
+
+
+/* top bar styles*/
+.header-top-bar{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background: #378AC4;
+    color: white;
+    margin: 0 auto !important;
+    padding: 0 !important;
+    width: 100%;
+}
+#header-top-bar-pucmm-btn{
+    position: relative;
+    margin: auto auto auto 0 !important;
+    font-size: 18px;
+    color: inherit;
+    display: inline-block;
+    text-decoration: none;
+}
+#header-top-bar-social-icons{
+    position: relative;
+    margin: auto 0 auto auto !important;
+    display: inline-block;
+    padding: 0 !important;
+
+    a{
+        color: inherit;
+        text-align: right;
+        margin: 0 !important;
+        padding: 0 !important;
+        font-size:21px;
+    }
+}
+
+
+
 
 
 
@@ -57,8 +97,8 @@ h1,h2,h3,h4,h5,h6,p,span,label,small,div,input,ul,li,ol,form,strong,a,i,::placeh
         flex: 1;
 
         li{
-            font-size: 17.5px;
-            font-weight: 700;
+            font-size: 16.5px;
+            font-weight: bold;
             list-style-type: none !important;
             margin: 0 !important;
             padding: 10px 0 !important;
@@ -111,7 +151,8 @@ h1,h2,h3,h4,h5,h6,p,span,label,small,div,input,ul,li,ol,form,strong,a,i,::placeh
         overflow: hidden;
         height: 100%;
         i{
-            font-size:16px;
+            font-size: 16.5px;
+            font-weight: bold;
             padding: 12px;
             margin: auto;
         }
@@ -125,7 +166,8 @@ h1,h2,h3,h4,h5,h6,p,span,label,small,div,input,ul,li,ol,form,strong,a,i,::placeh
             justify-content: center;
             align-content: center;
             span{
-                font-size: 14px;
+                font-size: 16.5px;
+                font-weight: bold;
                 display: inline-block;
                 margin: auto !important;
                 white-space: nowrap;
@@ -134,7 +176,8 @@ h1,h2,h3,h4,h5,h6,p,span,label,small,div,input,ul,li,ol,form,strong,a,i,::placeh
             i{
                 display: inline-block;
                 margin: auto !important;
-                font-size: 16px;
+                font-size: 16.5px;
+                font-weight: bold;
                 padding: 0 !important;
             }
         }
@@ -302,7 +345,7 @@ h1,h2,h3,h4,h5,h6,p,span,label,small,div,input,ul,li,ol,form,strong,a,i,::placeh
         }
         #main-row-left-top-inner-col-4{
             position: relative;
-            padding: 0;
+            padding: 0 !important;
             min-height: 320.5px;
             overflow: hidden;
             background: rgb(192, 192, 192);
@@ -383,6 +426,216 @@ h1,h2,h3,h4,h5,h6,p,span,label,small,div,input,ul,li,ol,form,strong,a,i,::placeh
     }
 }
 
+
+.custom-padding-side-30{
+    padding: 0 30px !important;
+}
+#events-column{
+    position: relative;
+    padding: 0 !important;
+    min-height: 320.5px;
+    overflow: hidden;
+    background: rgb(192, 192, 192);
+
+
+      
+    #eventon_loadbar_section{
+        display: none !important;
+      }
+      .ajde_evcal_calendar > .evo_data,
+      .ajde_evcal_calendar > .calendar_header {
+        display: none !important;
+      }
+      .ajde_evcal_calendar{
+          padding-bottom: 0 !important;
+      }
+      
+      .eventon_events_list{
+        display: -ms-flexbox !important;
+        display: flex !important;
+        flex-direction: column;
+        margin-right: auto !important;
+        margin-left: auto !important;
+        margin-bottom: 0 !important;
+      
+        border: none !important;
+        outline: none !important;
+        padding: 0px !important;  
+        width: auto;
+        border-radius: 0 !important;
+      }
+      .eventon_events_list > .eventon_list_event:nth-child(1) {
+          background: #d8d8d8 !important;
+      }
+      .eventon_events_list > .eventon_list_event:nth-child(2) {
+          background: #EDEBEB !important;
+      }
+      .eventon_events_list > .eventon_list_event:nth-child(3) {
+          background: #bfbfbf !important;
+      }
+      
+      
+      .eventon_events_list > .eventon_list_event{
+        position: relative;
+        user-select: none !important;    
+        border: none !important;
+        padding: 0 0 10px 0 !important;
+        margin: 0 !important;
+        overflow: hidden !important; 
+      }
+      
+      .eventon_events_list > .eventon_list_event > .desc_trig_outter a.evcal_list_a{
+        padding: 0px !important;
+        margin: 0 !important;
+        border:none !important;
+        
+        flex: 1 !important;
+    
+        background: none !important;
+        color:#8D898A !important;
+        text-align: left !important;
+      }
+      
+      /* fecha */
+      .eventon_events_list .eventon_list_event .evcal_cblock{
+        display: none !important;
+      
+      }
+      .eventon_events_list .eventon_list_event .evcal_cblock .evcal_cblock *{
+        display: none !important;
+      }
+      .eventon_events_list .eventon_list_event .evcal_cblock > .evo_start > .date{
+        display: none !important;
+      } 
+      .eventon_events_list .eventon_list_event .evcal_cblock > .evo_start > .month{
+        display: none !important;
+      } 
+      .eventon_events_list .eventon_list_event .evcal_cblock > .evo_end{
+        display: none !important;
+      } 
+      .eventon_events_list .eventon_list_event .evcal_cblock > .evo_end *{
+        display: none !important;
+      }
+      .eventon_events_list .eventon_list_event .evcal_cblock > .evo_end > .date{
+        display: none !important;
+      }
+      .eventon_events_list .eventon_list_event .evcal_cblock > .evo_end > .month{
+        display: none !important;
+      }
+      .eventon_events_list .eventon_list_event .evcal_cblock > .clear{
+        display: none !important;
+      }
+      
+      /* texto */
+      .eventon_events_list > .event > .desc_trig_outter a{
+          position: relative;
+      }
+      
+      .eventon_events_list > .event > .desc_trig_outter a > .evcal_desc{
+        margin: 0 !important;
+        padding: 0 !important;
+        width: 100% !important;
+      }
+      .eventon_events_list > .event > .desc_trig_outter a > .evcal_desc > .evo_above_title,
+      .eventon_events_list > .event > .desc_trig_outter a > .evcal_desc > .evo_below_title,
+      .eventon_events_list > .event > .desc_trig_outter a > .evcal_desc > .evcal_desc_info,
+      .eventon_events_list > .event > .desc_trig_outter a > .evcal_desc > .evcal_desc3{
+        display: none !important;
+      }
+      
+      .eventon_events_list > .event > .desc_trig_outter a > .evcal_desc{
+        width: 100% !important;
+        position: relative !important;
+    
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: center !important;
+      }
+      .eventon_events_list > .event > .desc_trig_outter a > .evcal_desc > .evcal_desc2.evcal_event_title{
+        font-size: 12px !important;
+        padding: 15px !important;
+    
+        width: 100% !important;
+        margin: auto !important;
+    
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: center !important;
+    
+        text-align: left !important;
+      }
+      .eventon_events_list > .event > .desc_trig_outter a > .evcal_desc > .evcal_desc2.evcal_event_title *{
+          margin: auto !important;
+      }
+      
+      /* desplegable */
+      .eventon_events_list > .event > .event_description.evcal_eventcard{
+        display: block !important;
+        width: 100%;
+        border: none !important;
+        outline: none !important;
+        background: inherit !important;
+      }
+      
+      .eventon_events_list > .event > .event_description.evcal_eventcard > .evo_metarow_time {
+        display: inline-flex !important;
+        justify-content: flex-start;
+        width: 100%;
+        padding: 0 !important;
+        background: inherit !important;
+        border: none !important;
+        outline: none !important;
+      }
+      .eventon_events_list > .event > .event_description.evcal_eventcard > .evo_metarow_time > .evcal_evdata_icons{
+        display: none !important;
+      }
+      .eventon_events_list > .event > .event_description.evcal_eventcard > .evo_metarow_time > .evcal_evdata_cell{
+        display: inline-block !important;
+        width: 100%;
+        margin: 0 auto !important;
+        padding: 0 !important;
+      }
+      .eventon_events_list > .event > .event_description.evcal_eventcard > .evo_metarow_time > .evcal_evdata_cell > .evo_h3{
+        display: none !important;
+      }
+      .eventon_events_list > .event > .event_description.evcal_eventcard > .evo_metarow_time > .evcal_evdata_cell > p{
+        display: inline-block !important;
+        width: 100%;
+        margin: 0 auto !important;
+        padding: 0 12px !important;
+        background: inherit !important;
+      }
+      .eventon_events_list > .event > .event_description.evcal_eventcard > .evo_metarow_ICS{
+        display: none !important;
+      } 
+      .eventon_events_list > .event > .event_description.evcal_eventcard > .evo_metarow_ICS > .evcal_evdata_icons{
+        display: none !important;
+      }
+      .eventon_events_list > .event > .event_description.evcal_eventcard > .evo_metarow_ICS > .evcal_evdata_cell{
+        display: none !important;
+      }
+      .eventon_events_list > .event > .event_description.evcal_eventcard > .evo_metarow_ICS > .evcal_evdata_cell > p{
+        display: none !important;
+      }
+      .eventon_events_list > .event > .event_description.evcal_eventcard > .evo_metarow_ICS > .evcal_evdata_cell > p > a{
+        display: none !important;
+      }
+      .eventon_events_list > .event > .event_description.evcal_eventcard > .evo_card_row_end{
+        display: none !important;
+      }
+      .eventon_events_list > .event > .desc_trig.sin_val.evcal_list_a{
+        display: none !important;
+      }
+      .eventon_events_list > .event > .desc_trig_outter a::after{
+        display: none !important;
+      }
+      .eventon_events_list > .event > .clear.end{
+        display: none !important;
+      }
+      
+
+
+}
 
 
 
@@ -605,8 +858,6 @@ h1,h2,h3,h4,h5,h6,p,span,label,small,div,input,ul,li,ol,form,strong,a,i,::placeh
 
 /* eventon styles on sidebar */
 #main-row-left-top-inner-col-4{
-
-
     
     #eventon_loadbar_section{
         display: none !important;
@@ -809,38 +1060,433 @@ h1,h2,h3,h4,h5,h6,p,span,label,small,div,input,ul,li,ol,form,strong,a,i,::placeh
     
 
 
-    /* map posts articles styles */
+/* map posts articles styles */
 #map-posts{
     background: rgb(223, 223, 223);
+    padding: 0 !important;    
+    display: flex;
+    min-height: 270px;
+    align-items: center;
 }
 .article-wrapper,.article-wrapper:hover {
     margin: 28px 0;
-    padding: 0 15px;
+    padding: 0 15px 0 0;
     text-decoration: none;
 }
 .article-date {
-    line-height: 17px;    
-    display: block;
-    color: #009DDB;
-    font-size: 12.5px;
-    font-weight: 700;
-    padding:0 3px 0 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-    text-align: center;
+    line-height: 17px;
+
+    span{
+        display: block;
+        color: #009DDB;
+        font-size: 18px;
+        font-weight: 700;
+    }
+    small{
+        color: #231F20;
+        font-size: 14px;
+    }
 }
 .article-title h4 {
     margin: 0;
     color: #8D898A;
     font-size: 14px;
     line-height: 17px;
-    padding:0 0 0 5px;
+    padding: 0 10px 0 0;
 }
-.article-row {
-    display: flex;
-    min-height: 270px;
-    align-items: center;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*-- BEGIN FEATURED PAGE --*/
+.featured-page {
+    padding: 70px 0;
+    overflow: hidden;
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.featured-page:before {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    content: '';
+    display: block;
+    position: absolute;
+    background-color: rgba(35,31,32,.60);
+    z-index: 1;
+}
+.featured-page-title {
+    color: #fff;
+    position: relative;
+}
+.featured-page-title h1 {
+    margin: 0;
+    font-size: 48px;
+    font-weight: 700;
+}
+.featured-page-title h2 {
+    font-size: 25px;
+    font-weight: 700;
+}
+.featured-page-container {
+    z-index: 1;
+    position: relative;
+}
+
+
+
+
+
+
+/*columnas de pagina de equipo*/
+.custom-equipo-row{
+    margin-bottom: 50px !important;
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+}
+
+.custom-equipo-details{
+    h6{
+        color: #B0B0B2 !important;
+        text-transform: uppercase !important;
+    }
+    h5{
+        color: #009DDB !important;
+        text-transform: uppercase !important;
+    }
+    p{
+        color: #9B9B9B !important;
+    }
+}
+.custom-equipo-persona{
+
+    .custom-equipo-persona-inner{
+        background: #f7f4f4; 
+        padding-bottom: 10px;
+
+        img{
+            display: block !important;
+            width: 100% !important;
+            margin: 0 !important;
+            padding: 0 !important;
+        }
+        h5{
+            display: block !important;
+            width: 100% !important;
+            margin: 0 !important;
+            padding: 5px 15px 0 15px !important;
+    
+            color: #231F20 !important;
+        }
+        h6{
+            display: block !important;
+            width: 100% !important;
+            margin: 0 !important;
+            padding: 0 15px !important;
+    
+            color: #009DDB !important;
+        }
+        small{
+            display: block !important;
+            width: 100% !important;
+            margin: 0 !important;
+            padding: 3px 15px !important;
+    
+            color: #231F20 !important;
+        }  
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*news index stlyes and pagination*/
+.index-row-page-name{
+    h3{
+        color: #B0B0B2 !important;
+        font-size: 20px !important;
+        font-weight: 700 !important;
+        margin-bottom: 5px !important;
+        text-transform: uppercase !important;
+    }
+    h2{
+        color: #009DDB !important;
+        font-size: 30px !important;
+        font-weight: 700 !important;
+        margin-bottom: 15px !important;
+        text-transform: uppercase !important;
+    }
+}
+
+
+
+
+.custom-ingenieria-news {
+    padding:10px!important;
+    margin: 0 0 30px 0 !important;
+    position: relative !important;
+
+    min-height:340px !important;
+    height:340px !important;
+
+    .custom-ingenieria-news-inner{
+        min-width: 100%;
+        width:100%;
+        max-width: 100%;
+        min-height: 100%;
+        height:100%;
+        max-height: 100%;
+        padding: 0px !important;
+        margin: 0 !important;
+        position: relative !important;
+    }
+
+
+    .custom-ingenieria-news-date{
+        position: absolute;
+        top:0;
+        left: 0;
+        font-size:10px;
+        color:white;
+        padding:6px 10px;
+        background: rgba(0,0,0,0.6);
+        z-index: 5;
+        border-radius:100px;
+        margin:5px 0 0 5px;
+    }
+
+    .custom-ingenieria-news-image{
+        width:100%;
+        height: 200px;
+        max-height: 200px;
+        overflow: hidden;
+        object-fit: cover;
+        position: relative;
+
+        img{
+            position: absolute;
+            object-fit: cover;
+
+            top:0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            margin: auto !important;
+
+            min-width: 100%;
+            width:100%;
+            max-width: 100%;
+            min-height: 100%;
+            height:100%;
+            max-height: 100%;
+        }
+    }
+
+    h6{
+        font-size:14px !important;
+        padding: 12px 0 !important;
+    }
+
+    a{
+        padding: 3px 10px !important;
+        text-decoration: none;
+        font-size: 12px !important;
+        color: #333;
+        outline: none;
+        border:solid thin #333;
+        border-radius: 100px;
+
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        margin: 0;
+    }
+}
+
+
+.post-navigation{
+    width: 100%;
+    margin-top: 20px;
+    text-align: center;
+
+    .pagination{
+        list-style-type: none !important;
+        margin:0;
+        padding:0;
+        display: inline-block;
+        
+        .page-numbers{
+            list-style-type: none !important;
+            margin:0;
+            padding:0;
+            
+            display: -ms-flexbox;
+            display: flex;
+            padding-left: 0;
+            list-style: none;
+            border-radius: .25rem;
+
+
+            li{
+                font-size:13px !important;
+                text-decoration: none !important;
+                color: #626262 !important;
+                overflow: hidden !important;
+                display: flex !important;
+                margin: 0 5px !important;
+                border-radius: 100px !important;
+                align-items: center !important;
+                justify-content: center !important;
+                position: relative;
+                a{
+                    font-size:13px !important;
+                    text-decoration: none !important;
+                    color: #626262 !important;
+                }
+
+                span.current{
+                    color:white !important;
+                    margin: auto !important;
+                    padding: 0 !important;
+                    text-align: center;
+
+                    &::before{
+                        content:'';
+                        display: block;
+                        background:rgb(0, 136, 255);
+                        width:100% !important;
+                        height: 100% !important;
+                        position: absolute;
+                        top: 0;
+                        right:0;
+                        bottom: 0;
+                        left: 0;
+                        margin: auto !important;
+                        z-index: -1;
+                    }
+                }
+            }
+
+            
+
+            li:not(:first-child):not(:last-child){
+                width: 37px !important;
+                height: 37px !important;
+            }
+            li:first-child,li:last-child{
+                height: 37px !important;
+                display: flex !important;
+            }
+            li:first-child{
+                padding: 0 20px !important;
+            }
+            li:last-child{
+                padding: 0 20px !important;
+            }
+        }
+    }
+}
+
+
+.custom-ingenieria-news-detailed{
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+.custom-ingenieria-news-detailed-inner{
+    //meh
+}
+
+
+.custom-ingenieria-news-detailed-breadcrumbs {
+    min-width: 100%;
+    width: 100%;
+    max-width: 100%;
+    padding: 0 0 35px 0; 
+    font-size: 10px !important; 
+
+    ul {
+      list-style-type: none !important;
+      margin: 0;
+      padding: 0;
+      font-size: 10px !important;
+      color: #A0A7AB !important;
+      text-transform: uppercase !important;
+  
+      li {
+          display: inline-block;
+          margin-right: 10px;
+          font-size: 10px !important;
+          a{
+            font-size: 10px !important;
+            text-decoration: none !important;
+          }
+      }
+
+    }
+  }
+
+  
+
+
+.custom-ingenieria-news-detailed-image{
+    width:100%;
+    height: 350px;
+    max-height: 350px;
+    margin: 0;
+    position: relative;
+    overflow: hidden;
+
+    img{
+        min-width: 100%;
+        max-width: 100%;
+        min-height: 100%;
+        max-height: 100%;
+
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        margin: auto;
+        object-fit: cover !important;
+    }
+}
+.custom-ingenieria-news-detailed-title{
+    margin: 20px 0;
+
+    h2{
+        margin: 0 0 10px 0;
+        color: #231F20;
+        font-size: 28px;
+        font-weight: 700;
+        line-height: 30px;
+    }
+
+    .custom-ingenieria-news-detailed-title-info span{
+        color: #B4B4B4;
+        font-size: 14px;
+        margin-right: 10px;
+        display: inline-block;
+    }
 }
